@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>conditional operators</title>
+</head>
+<body>
+   
+</body>
+</html>
+<script>
+    //A is maximum
+    let A = 50
+    let B = 400
+if(A > B){
+   console.log("A is maximum")
+}else {
+    console.log("B is maximum")
+}
+
+   // negative positive
+     let Number = 0
+if(0 > Number){
+   console.log("Number is Negative")
+}else if (Number > 0){
+   console.log("Number is Positive")
+}else{
+    console.log("Number is Zero")
+}
+
+  //A is maximum
+  let a = 5000
+  let b = 800
+  let C = 110
+if(a > b && a > C){
+   console.log("A is maximum")
+}else if( b > a &&  b> C){
+    console.log(" B is maximum")
+}else{
+    console.log("C is maximum")
+}
+
+// odd even
+  let Num = 5
+if(Num % 2 == 0 ){
+   console.log("Number is even")
+}else{
+    console.log("Number is odd")
+}
+
+// alphabet
+ let numb = '@'
+ if(numb >= 0 || numb <0){
+    console.log("Digit")
+ }else if(numb >= 'A' && numb <= 'Z' || numb >= 'a' &&  numb <= 'z'){
+     console.log("Alphabet")
+ }else{
+    console.log("special charecter")
+ }
+
+// leap year
+let year = 2024
+if(year % 4 == 0){
+   console.log("is leap year")
+}else{
+    console.log("Not leap year")
+}
+
+// divisable or not
+let digit = 5
+if(digit % 2 == 0){
+   console.log("is divisable ")
+}else{
+    console.log("not divisable")
+}
+
+// profit or loss
+ let sellingprice = 500
+ let costprice = 4500
+if(sellingprice >= costprice){
+   console.log("Profit")
+}else{
+    console.log("Loss")
+}
+
+// week switch case
+// switch (5){
+//     case 1 :
+//     day = "Monday" ; 
+//     break ; 
+  
+//     case 2 :
+//     day = "Tuesday" ; 
+//     break ; 
+
+//     case 3 :
+//     day = "Wednesday" ; 
+//     break ; 
+
+//     case 4 :
+//     day = "Thursday" ; 
+//     break ; 
+
+//     case 5 :
+//     day = "Friday" ; 
+//     break ; 
+
+//     case 6 :
+//     day = "Saturday" ; 
+//     break ; 
+
+//     case 7 :
+//     day = "Sunday" ; 
+//     break ; 
+//   default :
+//     day = "put valid value"
+// }
+
+// console.log (day)
+
+
+// month switch case
+switch(11){
+    case 1:
+    Month = "January"
+    console.log(Month, "31 days")
+    break ;
+    
+    case 2:
+    Month = "February"
+    if(year % 4 == 0){
+        console.log(Month,"29 days")
+    } else{
+        console.log(Month,"28 days ")
+    }
+    
+    break ;
+    
+    case 3:
+    Month = "March"
+    console.log(Month,"30 days")
+    break ;
+
+    case 4:
+    Month = "April"
+    console.log(Month,"31 days")
+    break ;
+
+    case 5:
+    Month = "May"
+    console.log(Month,"30 days")
+    break ;
+
+    case 6:
+    Month = "June"
+    console.log(Month,"31 days")
+    break ;
+
+    case 7:
+    Month = "July"
+    console.log(Month,"30 days")
+    break ;
+
+    case 8:
+    Month = "August"
+    console.log(Month,"31 days")
+    break ;
+
+    case 9:
+    Month = "September"
+    console.log(Month,"30 days")
+    break ;
+
+    case 10:
+    Month = "Octomber"
+    console.log(Month,"31 days")
+    break ;
+
+    case 11:
+    Month = "November"
+    console.log(Month,"30 days")
+    break ;
+
+    case 12:
+    Month = "December"
+    console.log(Month,"31 days")
+    break;
+     
+    default :
+    Month ="Put valid value"
+    
+}
+console.log(Month)
+
+// find percentage
+ let  Maths = 50
+ let Science = 50
+ let Social = 50
+ let English = 50
+ let Hindi = 50
+ let Gujrati = 50
+ let Sanskrit = 50
+
+ sum = Maths + Science + Social + English + Hindi + Gujrati + Sanskrit
+ console.log ("Total Marks ", sum)
+ avg = sum / 7
+ console.log("Average = ",avg)
+ 
+ if(avg >= 85){
+    console.log ("A Grade")
+ }else if (avg >= 65){
+    console.log("B Grade")
+ }else if(avg >= 45){
+  console.log("C Grade")
+} else if (avg >= 30){
+    console.log("D Grade")
+}else {
+    console.log("E Grade")
+}
+
+// notes find 
+ let amount = 555258
+ let n500, n200, n100, n50, n20, n10, n5, n2, n1
+ n500 = n200 = n100 = n50 = n20 = n10 = n5 = n2 = n1 = 0
+
+ if(amount >= n500){
+    n500 = parseInt(amount / 500);
+    amount -= n500 * 500
+ }
+
+ if(amount >= n200){
+     n200 = parseInt(amount / 200);
+     amount -= n200 * 200
+ }
+
+ if(amount >= n100){
+     n100 = parseInt(amount / 100);
+     amount -= n100 * 100
+}
+
+if(amount >= n50){
+     n50 = parseInt(amount / 50);
+     amount -= n50 * 50
+}
+
+if(amount >= n20){
+     n20 = parseInt(amount / 20);
+     amount -= n20 * 20
+}
+
+if(amount >= n10){
+     n10 = parseInt(amount / 10);
+     amount -= n10 * 10
+}
+
+if(amount >= n5){
+     n5 = parseInt(amount / 5);
+     amount -= n5 * 5
+}
+
+if(amount >= n2){
+     n2 = parseInt(amount / 2);
+     amount -= n2 * 2
+}
+
+if(amount >= n1){
+     n1 = parseInt(amount / 1);
+     amount -= n1 * 1
+}
+
+
+let ab =""
+ab += "No. of 500 Notes" + n500 + "<br>"
+ab += "No. of 100 Notes" + n100 + "<br>"
+ab += "No. of 50 Notes" + n50 + "<br>"
+ab += "No. of 20 Notes" + n20 + "<br>"
+ab += "No. of 10 Notes" + n10 + "<br>"
+ab += "No. of 5 Coins" + n5 + "<br>"
+ab += "No. of 2 Coins" + n2 + "<br>"
+ab += "No. of 1 Coins" + n1+ "<br>"
+
+document.write(ab)
+
+//vowles or consonant
+ let ch = B;
+ if(ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O '|| ch == 'U' ||ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o'|| ch == 'u'){
+   console.log ("Vowles")
+ }else{
+    console.log("Consonant")
+ }
+</script>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    let obj = {
+        Name : "Bhavishka",
+        Place : "Indore",
+        Age : 20,
+        Pincode : 454116,
+        Hobbies : ["Dancing ","Cookking","Travelling"]
+    
+    }
+    // object of array
+
+    document.write(obj.Hobbies[2])
+    document.write("My name is "+ obj.Name )
+    document.write(`<br>My name is ${obj.Name} <br>`)
+    document.write(obj.Age,"<br>" )
+
+    console.log(obj.Name)
+    console.log(obj.Place )
+    console.log(obj.Age )
+    console.log(obj.Pincode)
+    console.log(obj.Hobbies )
+
+    // Array of object 
+
+    let array = [{Movie: "jeene nhi dunga",year: 1918},
+       {Movie: "Bhool Bhulaiya",year:2014},
+       {Movie:"Istree",year:2020},
+       {Movie: "Simba",year:2024}]
+
+     document.write(array[1].Movie,"<br>" )
+
+     document.write(array[2].Movie,"<br>" )
+
+    //  Array Methods 
+    
+    // push - add (back)
+    let arr = ["Mango","Banana","Kiwi"]
+    console.log(arr)
+ 
+    arr.push("Guava")
+    console.log(arr)
+    arr.push("Orange")
+    console.log(arr)
+
+    // pop -delete (back)
+    arr.pop()
+    console.log(arr)
+
+    // shift -delete (front)
+    arr.shift() 
+    console.log(arr)
+
+    // unshift -add(front)
+    arr.unshift("Dragon Fruit")
+    console.log(arr)
+
+    // splice (index, delete,add)
+    let F= ["jkggfkkvk0.","Banana","Apple","Orange","Kiwi","Guava"]
+    
+    F.splice(2,1,"gvyt")
+    console.log(F)
+
+    // concat
+    let aa = [5,6,7,8]
+    let bb = [1,2,3,4]
+    
+    let cc = bb.concat(aa)
+    console.log(cc)
+
+    // inclue
+    let dd = F.includes("Banana")
+    console.log(dd)
+
+    // join
+    let arr1 = [1,2,3]
+    let e = arr1.join(",")
+    console.log(e)
+
+
+    // slice
+
+    let a = [1,2,3,4,5,6,7,8,9]
+    let b = a.slice(2,6)
+    console.log(b)
+
+    // reduce 
+
+    let numbers = [1,2,3,4,5,6,7,8,9]
+    // callback function 
+    let bb1 = numbers.reduce((a,b)=> {return a + b})
+    console.log(bb1)
+
+    // filter 
+
+    let filter1 = [{name: "JohnWlaker",age: 20, grade:75},
+                   {name:"katy parry", age: 22, grade:88},
+                   {name: "iron man", age :18, grade:90}]
+
+    let gg = filter1.filter((ele)=> {return ele.grade <= 80})      
+    console.log(gg)      
+    
+    // for each
+
+    let filter2 = [{name: "JohnWlaker",age: 20, grade:75},
+                   {name:"katy parry", age: 22, grade:88},
+                   {name: "iron man", age :18, grade:90}]
+
+    let for1 =["Pushpa 2","venom","Kalki","Maharaja","Stranger things"]
+    document.write(for1)
+
+    // mnap 
+    for1.map((value,index)=>{
+        document.write(value + "<br>")
+    })
+
+    // 
+    const students = [{name: "Alice", grade:85} ,
+        {name:"Bob", grade: 70},
+        {name:"Charlie",grade:95},
+        {name:"David", grade:60},
+        {name:"Eve",grade:72}]
+    
+    let minGrade = 75
+
+    let a1= students.map((student)=> student.grade > minGrade)
+    console.log(a1)
+
+    // 
+
+    const product = [{name:"Laptop", price: 999.99, instock: true,category:"Electronics"},
+                 {name:"Smartphone", price: 25.000, instock: false, category:"Electronics"},
+                 {name:"Coffee Maker", price: 1000, instock: true, category: "Home Appliance"},
+                 {name:"Headphone", price: 1500, instock: true, category: "Electronics"},
+                 {name: "Blender", price:500, instock: false, category: "Electronics"}]
+
+    // let b1 = product.filter((product) => product.instock === true && product.category === "Electronics")
+    // console.log(b1)
+
+    product.map((ele, i)=> document.write("product" + ele.name + "price :"+ ele.price + "category :" + ele.category +"<br>"))
+
+//   
+
+const employees = [{name: "Alice", monthlysalary:10000, position:"Developer"},
+                  {name: "Bob", monthlysalary: 15000 , posotion: "Designer"},
+                  {name: "Charlie", monthlysalary: 8000, position: "Manager"},
+                  {name: "David", monthlysalary: 5000, posiyion: "Developer"},
+                  {name: "Eve", monthlysalary: 9000, position: "Director"+ "<br>"}]
+
+let year = employees.map((employee) => employee.monthlysalary * 12 )
+    document.write(year)
+</script>

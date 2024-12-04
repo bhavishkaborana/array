@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="test()">call function</button>
+</body>
+</html>
+<script>
+    // normal function , arrow function
+
+    // syntax:
+    // create
+    // normal function
+    // function test (){
+    //     console.log("Hello World")
+    // }
+    // // call
+    // ()=>{}
+    // test()
+
+    // // arrow function
+    // const test = () =>{
+    //     console.log("Hello Universe")
+    // }
+
+    // // arguments, parameters 
+    // // take something ,return nothing
+    // // take nothing , return nothing
+    // // take sommething ,return something
+    // // take noting , return something
+
+    // // take nothing , return something
+    // function add(){
+    //     let a =10
+    //     let b =5
+    //     document.write("multiplication of"  + a*b)
+    // }  
+    // add(10,5)
+
+    // // take nothing, return nothing
+    // function rect(){
+    //     let l = 80
+    //     let b = 10
+    //     let h = 15
+    //     document.write("Area of rectangle "+ l*b + "m2")
+    //     document.write("Volume of rectangle"+ l*b*h + " m3")
+
+    // }
+    // rect()
+
+    // // take something ,return nothing
+    // function circle(r , pi){
+    //      r = 20
+    //      pi =3.14
+    //      document.write("Area of circle"+ pi*r*r +"m2")
+    // }
+    // circle()
+
+    // // take something ,return something
+    // function sum(maths , science, english){
+    //      return (maths + science + english)/3
+    // }
+    // // let a = sum(50,60,70)
+    // document.write(sum(50,60,70))
+
+    // celcius and ferenhite
+
+    const celcius = (n) =>
+    //   `${n}Celcius is equal to ${(n *9/5)+ 32} Ferenhite.`  ;
+   "Celcius is equal to"+ ((n *9/5)+ 32) + "Ferenhite." ;
+      const n= 20;
+      console.log(celcius(n));
+
+    //triangle
+
+    const Triangle = (H , B) => 
+    " Area of Triangle" + (A = 1/2 * B * H) ;
+    const H = 5 , B = 4
+    console.log(Triangle(H , B)) ;
+    
+    // square
+
+    const Square = (width , Height) =>
+    "Area of Square " + (Width * Height);
+    const Width = 50 , Height = 50
+    console.log(Square(Width , Height));
+
+    // dollar to rupees
+    
+    const rupees = (D) => 
+         "rupees equal to " + (D * 80)
+    
+    const D = 25
+    console.log(rupees(D))
+
+//    meter into foot 
+    const meter = (M) =>
+        "meter equal to " + (M * 3.28084)
+    
+    const M = 2
+    console.log(meter(M))
+</script>
